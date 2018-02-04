@@ -35,12 +35,20 @@ There is an open question as to whether or not SCPs can support IAM Conditional 
 
 ## Deployment Process
 
-As an administrator in the payer account, run:
+You must first run the ```enable_scp.sh``` script to enable the usage of SCPs in your organization. 
+
+To deploy all the SCPs in the Policies directory, run:
 
 	./deploy_scp.sh
 
+To attach the Security Controls SCP to all AWS accounts, run:
+
+	./apply_scp.sh
+
+you didn't run ```enable_scp.sh``` if you get the error: ```An error occurred (PolicyTypeNotEnabledException) when calling the AttachPolicy operation: This operation can be performed only for enabled policy types.``` 
+
 ### Prerequisites
-To run deploy_scp.sh, you need the following:
+To run the scripts, you need the following:
 
 * jq
 * awscli
