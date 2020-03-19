@@ -14,7 +14,7 @@ for policy_file in Policies/*.json ; do
 
     echo "  ${description}"
     
-    policy_id=`aws organizations list-policies --filter SERVICE_CONTROL_POLICY | jq --arg p "$policy" -c '.Policies[] | select( .Name | contains($p))' | jq -r .Id `
+    policy_id=`aws organizations list-policies --filter SERVICE_CONTROL_POLICY --output json | jq --arg p "$policy" -c '.Policies[] | select( .Name | contains($p))' | jq -r .Id `
     if [ ! -z $policy_id ] ; then
         echo "$policy exists as $policy_id"
         aws organizations update-policy --policy-id ${policy_id} --content file://$policy_file --name $policy --description "$description" --output text | grep POLICYSUMMARY
