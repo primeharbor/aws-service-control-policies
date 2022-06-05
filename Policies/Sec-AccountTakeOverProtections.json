@@ -8,8 +8,7 @@
                 "cloudtrail:DeleteTrail",
                 "cloudtrail:PutEventSelectors",
                 "cloudtrail:StopLogging",
-                "cloudtrail:UpdateTrail",
-                "cloudtrail:CreateTrail"
+                "cloudtrail:UpdateTrail"
             ],
             "Resource": [
                 "*"
