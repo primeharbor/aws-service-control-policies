@@ -1,7 +1,5 @@
 # AWS Organizational Service Control Policies
 
-**Sad Panda** - There is no Cloudformation support for Organizations & Service Control Policies, so all of this must be done by hand.
-
 ## What Are Service Control Policies
 [Service Control Policies](url) (aka SCPs) are similar to IAM policies but are applied by a parent AWS Account to a child AWS account via [AWS Organizations](url). They can white or blacklist services so not even the Root Account or a full IAM Administrator in the account can call the specified API actions. 
 
