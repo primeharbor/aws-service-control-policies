@@ -1,3 +1,11 @@
+# Prevent Public S3 Buckets
+
+This policy has been somewhat deprecated by the AWS S3 Block Public Access setting. However it can help prevent Public S3 buckets if the Block Public Access Setting isn't available.
+
+It should ideally be applied to the Workloads OU, and a single account dedicated to public S3 Buckets would be in a different OU.
+
+## Policy
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -112,3 +120,4 @@
     }
   ]
 }
+```

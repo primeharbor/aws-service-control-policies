@@ -1,3 +1,11 @@
+# Account Takeover Prevention
+
+This SCP is intended to prevent a threat actor with admin or root permissions in the account from disabling local logging, changing the owner of the account, or removing it from your organization.
+
+This should be applied to the Root OU.
+
+## Policy
+```json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -36,3 +44,4 @@
         }
     ]
 }
+```

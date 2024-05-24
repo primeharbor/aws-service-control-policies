@@ -1,3 +1,14 @@
+# Disable Regions
+
+This policy prevents local admins from performing actions outside of the approved regions.
+
+The `NotAction` clause excludes global services and certain read-only events that generate annoying errors in the AWS Console.
+
+It should be applied to specific Workload OUs, or on a per-account basis, where other regions are not required.
+
+
+## Policy
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -67,3 +78,4 @@
     }
   ]
 }
+```
