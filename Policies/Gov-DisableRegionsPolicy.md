@@ -69,7 +69,6 @@ It should be applied to specific Workload OUs, or on a per-account basis, where 
           "aws:PrincipalArn": [
             "arn:aws:iam::*:role/security-audit",
             "arn:aws:iam::*:role/OrganizationAccountAccessRole",
-            "arn:aws:iam::*:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO*",
             "arn:aws:iam::*:role/stacksets-exec-*",
             "arn:aws:iam::*:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig"
           ]
