@@ -23,4 +23,20 @@ This policy will configure the EC2 Service to prevent the sharing of EBS Snapsho
 }
 ```
 
-If applied to the Root OU, **there will be no exceptions**. If you need to publish snapshots or AMIs for legitimate business reasons, you will need to create a dedicated sharing account/OU, and apply this policy to all the other accounts and OUs.
+If applied to the Root OU, **there will be no exceptions**. If you need to publish snapshots or AMIs for legitimate business reasons, you will need to create a dedicated sharing account/OU, and apply this policy to override the main policy:
+```json
+{
+  "ec2_attributes": {
+    "image_block_public_access": {
+      "state": {
+        "@@assign": "unblocked"
+      }
+    },
+    "snapshot_block_public_access": {
+      "state": {
+        "@@assign": "unblocked"
+      }
+    }
+  }
+}
+```
