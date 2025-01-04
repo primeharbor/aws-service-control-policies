@@ -12,10 +12,6 @@ The `OrganizationAccountAccessRole` can make these changes and works with the [p
 
 This SCP should be applied to the Root OU.
 
-**Warning:**
-By default, new AWS buckets are created with PublicAccessBlock enabled. However, if legacy IAC tools are also attempting to set the bucket-level PublicAccessBlock, the IAC will fail due to the presense of `s3:PutBucketPublicAccessBlock` in this policy. IAM is not smart enough to distinguish between enabling PublicAccessBlock and disabling it. *Best practice is to enable PublicAccessBlock at the AWS Account Level*.
-
-
 ## Policy
 ```json
 {
