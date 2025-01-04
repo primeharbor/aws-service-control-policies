@@ -6,7 +6,7 @@ Additional security or governance roles should be added to the `Resource` block.
 
 This should be applied at the Root OU.
 
-## Policy
+## Service Control Policy
 ```json
 {
     "Version": "2012-10-17",

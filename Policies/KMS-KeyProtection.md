@@ -1,8 +1,11 @@
 # KMS Key Protection
 
-This SCP prevents the scheduled deletion of KMS Keys. It's intended to protect critical data from being made unavailable due to key deletion
+This SCP prevents the scheduled deletion of KMS Keys. It's intended to protect critical data from being made unavailable due to key deletion.
 
-## Policy
+For more about `kms:DeleteImportedKeyMaterial`, see [Effective Techniques for AWS Ransomware](https://www.chrisfarris.com/post/effective-aws-ransomware/).\
+For more about `kms:DeleteCustomKeyStore`, see [Perfecting Ransomware on AWS](https://medium.com/@harsh8v/redefining-ransomware-attacks-on-aws-using-aws-kms-xks-dea668633802)
+
+## Service Control Policy
 ```json
 
 {
@@ -12,7 +15,9 @@ This SCP prevents the scheduled deletion of KMS Keys. It's intended to protect c
             "Sid": "ProtectKeys",
             "Effect": "Deny",
             "Action": [
-                "kms:ScheduleKeyDeletion"
+                "kms:ScheduleKeyDeletion",
+                "kms:DeleteCustomKeyStore",
+                "kms:DeleteImportedKeyMaterial"
             ],
             "Resource": [
                 "*"

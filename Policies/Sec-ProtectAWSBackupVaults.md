@@ -4,7 +4,7 @@ This SCP is intended to prevent a threat-actor who has gained admin permissions 
 
 This SCP should be applied to the Root OU.
 
-## Policy
+## Service Control Policy
 
 ```json
 {

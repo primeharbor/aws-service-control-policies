@@ -4,7 +4,7 @@ The purpose of the SCP is to govern who can make marketplace subscriptions. Mark
 
 This SCP should be applied to the Root OU.
 
-## Policy
+## Service Control Policy
 ```json
 {
   "Version": "2012-10-17",

@@ -7,7 +7,7 @@ The `NotAction` clause excludes global services and certain read-only events tha
 It should be applied to specific Workload OUs, or on a per-account basis, where other regions are not required.
 
 
-## Policy
+## Service Control Policy
 ```json
 {
   "Version": "2012-10-17",

@@ -4,7 +4,7 @@ This sample policy can be used to ensure only specific EC2 Instance Types are la
 
 It should be applied to the Sandbox OU, or anywhere you want to strongly control costs.
 
-## Policy
+## Service Control Policy
 ```json
 {
   "Version": "2012-10-17",

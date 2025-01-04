@@ -5,7 +5,7 @@ This policy prevents local account admins from enabling any of the AWS Opt-in Re
 This should be applied to the Root OU
 
 
-## Policy
+## Service Control Policy
 ```json
 {
   "Version": "2012-10-17",
