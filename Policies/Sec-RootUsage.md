@@ -8,7 +8,7 @@ Note: SCPs do not apply to the Organization Management Account. Therefore that a
 
 This SCP should be applied to the Root OU.
 
-## Policy
+## Service Control Policy
 ```json
 {
   "Version": "2012-10-17",

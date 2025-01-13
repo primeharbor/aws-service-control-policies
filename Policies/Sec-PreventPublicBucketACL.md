@@ -4,7 +4,7 @@ This policy has been somewhat deprecated by the AWS S3 Block Public Access setti
 
 It should ideally be applied to the Workloads OU, and a single account dedicated to public S3 Buckets would be in a different OU.
 
-## Policy
+## Service Control Policy
 ```json
 {
   "Version": "2012-10-17",

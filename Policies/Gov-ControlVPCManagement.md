@@ -7,7 +7,7 @@ This Service Control Policy denies AWS accounts the ability to manage their own 
 You'd typically apply these to all workload accounts. You might have a special role for sandbox accounts that would let some builders the ability to do these actions. You'd want to add that special role to the Condition aws:PrincipalArn condition.
 
 
-## Policy
+## Service Control Policy
 ```json
 {
   "Version": "2012-10-17",

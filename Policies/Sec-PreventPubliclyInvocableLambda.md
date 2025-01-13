@@ -4,7 +4,7 @@ This policy prevents two forms of Lambda function misconfiguration. The first st
 
 This SCP should be applied to the Workloads OU.
 
-## Policy
+## Service Control Policy
 ```json
 {
   "Version": "2012-10-17",

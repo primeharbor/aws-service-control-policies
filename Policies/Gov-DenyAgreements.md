@@ -10,8 +10,8 @@ This is intended for sandbox accounts where builders are given elevated permissi
 This should be applied to the SandBox OU.
 
 
-## Policy
-https://github.com/welldone-cloud/aws-scps-for-sandbox-and-training-accounts/blob/main/scp-deny-making-agreements-purchases-and-reservations.json
+## Service Control Policy
+Adapted from https://github.com/welldone-cloud/aws-scps-for-sandbox-and-training-accounts/blob/main/scp-deny-making-agreements-purchases-and-reservations.json
 ```json
 {
   "Version": "2012-10-17",

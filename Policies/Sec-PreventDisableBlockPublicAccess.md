@@ -12,7 +12,7 @@ The `OrganizationAccountAccessRole` can make these changes and works with the [p
 
 This SCP should be applied to the Root OU.
 
-## Policy
+## Service Control Policy
 ```json
 {
   "Version": "2012-10-17",

@@ -4,7 +4,7 @@ This prevents a user from making an EBS Snapshot public. It's an added measure o
 
 **Note:** There are no condition keys for the `rds:ModifyDBSnapshotAttribute` and `rds:ModifyDBClusterSnapshotAttribute` that allows an cloud administrator to prevent public RDS and RDS Cluster Snapshots. Boo.
 
-## Policy
+## Service Control Policy
 ```json
 {
   "Version": "2012-10-17",

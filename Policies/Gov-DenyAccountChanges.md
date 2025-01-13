@@ -6,8 +6,7 @@ This policy ensures that local admins cannot change the account configuration, i
 
 While designed to apply to Sandbox accounts, this is a good governance role to apply to all AWS accounts. It allows folks in the Organizational Management account leveraging the `OrganizationAccountAccessRole` to make these changes and works with the [pht-account-configurator](https://github.com/primeharbor/pht-account-configurator) StepFunction that configures new accounts.
 
-## Policy
-
+## Service Control Policy
 This policy adapted from:
 https://github.com/welldone-cloud/aws-scps-for-sandbox-and-training-accounts/blob/main/scp-deny-changing-account-baseline-configuration.json
 

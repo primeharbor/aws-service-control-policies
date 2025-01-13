@@ -4,7 +4,7 @@ This SCP denies almost all actions in accounts that are about to be suspended. I
 
 This should be applied to the Suspended Accounts OU.
 
-## Policy
+## Service Control Policy
 ```json
 {
   "Version": "2012-10-17",
